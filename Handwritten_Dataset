@@ -1,1 +1,18 @@
+i m sharing mnist dataset and use below code to get access:
 
+
+------------------------------------------------------------------
+import pandas as pd
+
+# File ID from the link
+file_id = "1Saukj_bynfqvzqaX2h35HF_RKeXB8so2"
+
+# Construct the download URL
+url = f"https://drive.google.com/uc?id={file_id}"
+
+# Read CSV into Pandas DataFrame
+df = pd.read_csv(url)
+
+# Display first few rows
+df.head()
+---------------------------------------------------------------------------
