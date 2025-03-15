@@ -1,18 +1,51 @@
-i m sharing mnist dataset and use below code to get access:
+i m sharing this code and paste this in your code exactly same (change karne ki jarurat nahi hai)
 
 
 ------------------------------------------------------------------
+import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
 
-# File ID from the link
+# File ID from Google Drive
 file_id = "1Saukj_bynfqvzqaX2h35HF_RKeXB8so2"
-
-# Construct the download URL
 url = f"https://drive.google.com/uc?id={file_id}"
 
 # Read CSV into Pandas DataFrame
-df = pd.read_csv(url)
+df = pd.read_csv(url, header=None)  # No header in the dataset
 
-# Display first few rows
-df.head()
+# Extract labels (first column) and features (remaining columns)
+y = df.iloc[:, 0].values  # Labels
+X = df.iloc[:, 1:].values  # Features (pixel values)
+
+# Normalize pixel values (0-255 → 0-1)
+X = X / 255.0
+
+# Check available dataset size
+total_samples = X.shape[0]
+print(f"Total available samples: {total_samples}")
+
+# Define split ratios
+train_ratio = 0.8  # Use 80% for training, 20% for testing
+train_size = int(total_samples * train_ratio)
+test_size = total_samples - train_size  # Remaining for testing
+
+# Split dataset while maintaining class balance
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, train_size=train_size, test_size=test_size, stratify=y, random_state=42
+)
+
+# Verify shapes
+print(f"Training data shape: {X_train.shape}")  # Should be around 80% of total samples
+print(f"Test data shape: {X_test.shape}")       # Should be around 20% of total samples
+
+# Display some sample images
+fig, axes = plt.subplots(1, 5, figsize=(10, 3))
+for i, ax in enumerate(axes):
+    ax.imshow(X_train[i].reshape(28, 28), cmap="gray")
+    ax.set_title(f"Label: {y_train[i]}")
+    ax.axis("off")
+
+plt.show()
+
 ---------------------------------------------------------------------------
