@@ -92,3 +92,5 @@ Link for web demo of the project:
 
 ## Project Page
 To gain complete info about the project, You can visit the Project Webpage [Here](https://nitesh0409.github.io/prml_project_page/)
+<a href="https://example.com" target="_blank">Visit Example</a>
+
