@@ -12,7 +12,7 @@ This Project was done as part of **Course, CSL2050:Pattern Recognition and Machi
 3. [Video Walkthrough](#video-walkthrough)
 4. [How to Run the Project](#how-to-run-the-project)
 5. [Contributors](#contributors)
-6. [Project Page[(#project-page)
+6. [Project Page](#project-page)
 
 ---
 
