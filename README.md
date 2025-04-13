@@ -12,6 +12,7 @@ This Project was done as part of **Course, CSL2050:Pattern Recognition and Machi
 3. [Video Walkthrough](#video-walkthrough)
 4. [How to Run the Project](#how-to-run-the-project)
 5. [Contributors](#contributors)
+6. [Project Page[(#project-page)
 
 ---
 
@@ -88,3 +89,6 @@ Link for web demo of the project:
 |4.|Saurabh Kumar |Naive Bayes Model| 
 |5.|Vanshita Jeenwal| Decision Tree| 
 |6.|Mallam Vishnu Priya|KNN |
+
+## Project Page
+To gain complete info about the project, You can visit the Project Webpage [Here](https://nitesh0409.github.io/prml_project_page/)
