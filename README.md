@@ -77,7 +77,7 @@ Here’s a walkthrough of the project explaining how it works and the features i
 ## How to run the project
 You just need to go the following link, there you can draw a digit with a marker available and you can see the results.
 Link for web demo of the project:
-[Live Demo]()
+[Live Demo](https://handwritten-digit-recognition-vjhi.vercel.app/)
 
 ---
 ## Contributors:
